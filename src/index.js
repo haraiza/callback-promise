@@ -8,7 +8,7 @@ const heroeId2 = 'iron';
 //* Los callback siempre envian 2 variables como resultado. 
 //* Si no encuentra el heroe enviara el err con el mensaje
 //* si lo encuentra entonces dejara nulo el err y regresara el heroe
-buscarHeroe(heroeId, (err, heroe) => {
+buscarHeroe(heroeId1, (err, heroe) => {
 
     if (err) {
         console.error(err);
