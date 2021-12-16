@@ -1,7 +1,7 @@
 const heroes = {
     capi: {
         nombre: 'Capitan America',
-        poder: 'Aguantar inyeccionoes sin morir'
+        poder: 'Aguantar inyecciones sin morir'
     },
     iron: {
         nombre: 'Ironman',
@@ -21,7 +21,7 @@ const heroes = {
 //* segundo paramentro en index.js (heroe)
 //* Tercero, se ejecuta desde index.js el console.log(heroe)
 export const buscarHeroe = (id, callback) => {
-    console.log('Estoy en "callback.js"');
+    console.warn('Callback');
     const heroe = heroes[id];
 
     if (heroe) {
