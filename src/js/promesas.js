@@ -19,6 +19,8 @@ export const buscarHeroe = (id) => {
 
     return new Promise((resolve, reject) => {
         if (heroe) {
+
+            setTimeout(() => resolve(heroe), 1000); //Solo para hacer que se demore 1 segundo
             resolve(heroe);
         } else {
             reject(`No exite un heroe con el id ${id}`);
